@@ -1,0 +1,623 @@
+
+        	<header>
+        		<div id="headerBox">
+	            	<div id="logoBox"></div>
+	            	<div id="topMenuBox"></div>
+            	</div>
+            </header>
+
+
+            <nav>            
+            	<div id="mainMenuBox"></div>
+                <div id="subMenuBox"></div>                
+            </nav>
+
+
+	<section>
+            	<article  id="slideShow"> <!-- 슬라이드 쇼 -->   
+                </article> 
+                <article id="content1"> <!-- 탭메뉴 -->             
+                </article>
+                <article  id="content2"> <!-- 베스트 상품 -->           	
+                </article>
+            </section>
+
+            <footer>
+            	<div id="footerBox">
+            	 <div id="bottomMenuBox"></div>
+            	 <div id="companyInfo"></div>
+            	 <div id="moveToTopBox"></div>
+            	</div>
+            </footer>
+
+
+----------------------------------------------------------------------------------------------
+* {margin:0 auto;}
+
+/* 모든 컨텐츠를 포함하는  box */
+#wrap {
+	width:1280px;
+	background-color:#eeeeee;
+	text-align:center;
+	position:relative;
+}
+
+/* 모든 <img> 테그 테두리 없음 */
+img { border:0; margin:0;}
+
+
+<link rel="stylesheet" type="text/css" href="css/common.css" >
+------------------------------------------------------------------------------------------------------------------------
+
+<div id="logoBox"><a href="index.html"><img src="image/logo.png" id="logoImg"></a></div>
+<div id="topMenuBox">로그인 이벤트 장바구니 고객센터 회원가입</div>
+
+------------------------------------------------------------------------------------------------------------------------
+
+/*************** Header *******************/
+
+#headerBox {
+	height:60px;
+	line-height:60px; /* 줄간격 - 수직으로 가운데 정렬 효과 */
+	padding:0;
+}
+
+#logoBox {
+	float:left;
+	height:60px;
+	line-height:60px;
+}
+
+
+<link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+/* 모든 <ul> 태그에 적용 */
+ul {
+	margin-top:0;
+	padding:0;
+	list-style:none;   /* type 없음 */
+}
+
+/********** TOP MENU ************/
+
+#topMenuBox {
+	float:right;
+	font-weight:bold;
+	padding-right:10px;
+}
+
+
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+<ul id="menuItem">
+	<li><a href="#">SPECIAL</a></li>
+	<li><a href="#">메뉴항목1</a></li>
+	<li><a href="#">메뉴항목2</a></li>
+	<li><a href="#">메뉴항목3</a></li>
+	<li><a href="#">메뉴항목4</a></li>
+	<li><a href="#" id="showAllMenu">전체보기 ▼</a></li>
+</ul>
+
+
+
+/********** MAIN MENU ************/
+
+#mainMenuBox {
+	width:1280px;
+	height:35px;
+	line-height:35px;
+	background-color:#ffffff;   /* white*/
+	z-index:20;  /* 스크롤 시 위 오도록 */
+	border-top:solid #cccccc 1px;
+	border-bottom:solid #cccccc 1px;
+}
+
+#mainMenuBox ul{ margin:0;}
+
+#mainMenuBox li {
+	float:left;
+	text-align:center;
+	width:16%;
+	height:30px;
+	line-height:30px;
+}
+
+#mainMenuBox li:first-child{   /* 첫 번째 메뉴 항목 */
+	width:19%;   /* 20% 크기지만 border 때문에 19% */
+	border:solid 3px black;
+}
+
+#mainMenuBox ul li a {
+	text-decoration:none;
+	color:black;
+	font-size:14px;   /* pt 도 됨 */
+	font-weight:bold;
+}
+
+#mainMenuBox ul li a:hover {
+	color:red;
+}
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+<div class="subMenuItem" id="subMenuItem1">
+	<ul>
+		<li><a href="#">subMenuItem1-1</a></li>
+		<li><a href="#">subMenuItem1-2</a></li>
+		<li><a href="#">subMenuItem1-3</a></li>
+		<li><a href="#">subMenuItem1-4</a></li>
+	</ul>
+</div>
+<div class="subMenuItem" id="subMenuItem2">
+	<ul>
+		<li><a href="#">subMenuItem2-1</a></li>
+		<li><a href="#">subMenuItem2-2</a></li>
+		<li><a href="#">subMenuItem2-3</a></li>
+		<li><a href="#">subMenuItem2-4</a></li>
+	</ul>
+</div>
+<div class="subMenuItem" id="subMenuItem3">
+	<ul>
+		<li><a href="#">subMenuItem3-1</a></li>
+		<li><a href="#">subMenuItem3-2</a></li>
+		<li><a href="#">subMenuItem3-3</a></li>
+		<li><a href="#">subMenuItem3-4</a></li>
+	</ul>
+</div>
+<div class="subMenuItem" id="subMenuItem4">
+	<ul>
+		<li><a href="#">subMenuItem4-1</a></li>
+		<li><a href="#">subMenuItem4-2</a></li>
+		<li><a href="#">subMenuItem4-3</a></li>
+		<li><a href="#">subMenuItem4-4</a></li>
+	</ul>
+</div>
+<div class="subMenuItem" id="subMenuItem5">
+	<ul>
+		<li><a href="#">subMenuItem5-1</a></li>
+		<li><a href="#">subMenuItem5-2</a></li>
+		<li><a href="#">subMenuItem5-3</a></li>
+		<li><a href="#">subMenuItem5-4</a></li>
+	</ul>
+</div>
+<div class="subMenuItem" id="subMenuItem6">
+	<ul>
+		<li><a href="#">subMenuItem6-1</a></li>
+		<li><a href="#">subMenuItem6-2</a></li>
+		<li><a href="#">subMenuItem6-3</a></li>
+		<li><a href="#">subMenuItem6-4</a></li>
+	</ul>
+</div>
+
+
+
+/********** SUB MENU ************/
+
+#subMenuBox {
+	width:1280px;
+	height:160px;
+	background-color:#ffffff;   /* white*/
+	text-align:center;
+	z-index:10;  /* 슬라이드 쇼 박스 위로 드롭다운 하도록 */
+	padding-bottom:0;
+	position:absolute;
+}
+
+.subMenuItem {
+	width:15%;
+	background-color:#ffffff;  
+	border-left:solid #cccccc 1px;
+	border-right:solid #cccccc 1px;
+	margin-top:10px;
+}
+
+#subMenuItem1 {
+	position:absolute;
+	margin-left:5%;
+}
+
+#subMenuItem2 {
+	position:absolute;
+	margin-left:20%;
+}
+
+#subMenuItem3 {
+	position:absolute;
+	margin-left:35%;
+}
+
+#subMenuItem4 {
+	position:absolute;
+	margin-left:50%;
+}
+
+#subMenuItem5 {
+	position:absolute;
+	margin-left:65%;
+}
+
+#subMenuItem6 {
+	position:absolute;
+	margin-left:80%;
+}
+
+.subMenuItem ul {background-color:#ffffff;  }
+
+.subMenuItem ul li {height:35px; line-height:35px;}
+
+.subMenuItem ul li a {
+	display:inline-block;
+	color:#333333;
+	text-decoration:none;;
+}
+
+.subMenuItem ul li a:hover {
+	background-color:#ffffff; 
+	text-decoration:underline;
+	color:black;
+}
+
+
+
+visibility:hidden; /* 시작 시 SUB MENU 항목 숨김 */
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+<div id="slideShowBox">
+	<div id="slidePanel">
+		<img src= "image/slide_img_01.jpg" class="slideImage">
+		<img src= "image/slide_img_02.jpg" class="slideImage">
+		<img src= "image/slide_img_03.jpg" class="slideImage">
+		<img src= "image/slide_img_04.jpg" class="slideImage">
+		<img src= "image/slide_img_05.jpg" class="slideImage">
+	</div>
+</div> <!-- slideShowBox 끝 -->
+
+
+
+#slideShow {
+	position:relative;
+	background-color:#ffffff;
+	height:520px;
+	line-height:520px;
+	border-bottom:solid #cccccc 1px;
+}
+
+#slideShowBox {
+	width:1280px;
+	height:480px;
+	text-align:center;
+	overflow:hidden;
+}
+
+#slidePanel {
+	position:relative;
+	width:6400px;
+	height:480px;
+}
+
+.slideImage {
+	float:left;
+	width:1280px;
+	height:480px;
+}
+
+
+<link rel="stylesheet" type="text/css" href="css/slideShow.css">
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+<!-- 이전/다음 버튼 -->
+<div id="prevNextButtonBox">
+	<img id="prevButton" src="image/prevButton.png">
+	<img id="nextButton" src="image/nextButton.png">
+</div>		
+
+
+/*  prev/next 버튼 */
+#prevNextButtonBox { position:relative; z-index:10;}
+#prevButton {position:absolute; top:210px; left:4%; opacity:0.8; cursor:pointer;}
+#nextButton {position:absolute; top:210px; right:4%; opacity:0.8; cursor:pointer;}
+
+#prevButton:hover {opacity:1;}
+#nextButton:hover {opacity:1;}
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+<div id = "controlPanel">
+	<img src="image/controlButton1.png" class="controlButton">
+	<img src="image/controlButton1.png" class="controlButton">
+	<img src="image/controlButton1.png" class="controlButton">
+	<img src="image/controlButton1.png" class="controlButton">
+	<img src="image/controlButton1.png" class="controlButton">
+</div>
+
+
+
+
+/* control 버튼 */
+#controlPanel { margin:0 auto; width:160px;}
+#controlPanel img { float:left; margin:10px;}
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+<div id="tabMenuBox">					
+	<div id="tabMenu">
+		<ul id="tab">
+			<li><img src="image/tab1.png"></li>
+			<li><img src="image/tab2.png"></li>
+			<li><img src="image/tab3.png"></li>
+			<li><img src="image/tab4.png"></li>
+		</ul>
+	</div>								
+	<div id="tabContent">
+		<div><a href="#"><img src="image/tab_img_01.jpg"></a></div>
+		<div><a href="#"><img src="image/tab_img_02.jpg"></a></div>
+		<div><a href="#"><img src="image/tab_img_03.jpg"></a></div>
+		<div><a href="#"><img src="image/tab_img_04.jpg"></a></div>
+	</div>
+</div>	
+
+
+
+/*********** TAB MENU ************/
+
+#tabMenuBox {
+	width:80%;
+	height:580px;
+	background:white;
+	padding:40px;
+	text-align:center;
+}
+
+#tabMenu ul { height:30px; padding:0;}
+
+#tabMenu ul li {
+	float:left;
+	list-style:none;
+	width:25%;
+	padding:0;
+	height:30px;
+	line-height:30px;
+	overflow:hidden;
+	margin-top:0px;
+}
+
+
+#tabMenu img:hover { cursor:pointer;}
+
+/* 탭 선택 표시 : js 파일에서 addClass()에서 사용하기 위한 클래스 선택자 */
+.selectedItem img {margin-top:-30px;}
+
+
+
+<link rel="stylesheet" type="text/css" href="css/tabMenu.css">
+
+
+
+
+
+/*********** TAB CONTENT ********************/
+
+#tabContent {
+	width:100%;
+	height:550px;
+	margin-top:20px;
+	border-top:solid 1px #cccccc;
+	border-bottom:solid 1px #cccccc;
+}
+
+/* content의 모든 div 숨김 */
+
+#tabContent div {
+	display:none;
+	padding:0;
+	margin-top:20px;
+}
+	
+/* 첫 번째 div 만 보임 */	
+#tabContent div:first-child { display:block;}	
+
+#tabContent img { width:90%; border:solid 1px #cccccc;}
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+<div id="productBox">
+	<h3> 베스트 상품</h3>
+	<div class="product">
+		<div><a href="#"><img src="image/prd01.jpg"></a></div>
+		<div><a href="#"><img src="image/prd02.jpg"></a></div>
+		<div><a href="#"><img src="image/prd03.jpg"></a></div>
+	</div>
+	<div class="product">
+		<div><a href="#"><img src="image/prd04.jpg"></a></div>
+		<div><a href="#"><img src="image/prd05.jpg"></a></div>
+		<div><a href="#"><img src="image/prd06.jpg"></a></div>
+	</div>
+</div>
+
+
+
+
+#productBox {
+	width:80%;
+	height:700px;
+	background:white;
+	padding:40px;
+	padding-top:20px;
+}
+
+#productBox .product {
+	display:inline-block;
+	width:100%;
+	margin-top:20px;
+}
+
+#productBox .product div{
+	display:inline-block;
+	width:303px;
+	height:303px;
+	border:solid 1px #cccccc;
+	margin:10px;
+}
+
+#productBox .product div img {
+	width:100%;
+	height:100%;
+}
+
+#productBox .product div:hover {
+	opacity:0.7;
+	border:solid 1px red; 
+}
+
+
+
+<link rel="stylesheet" type="text/css" href="css/product.css" >
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+<div id="bottomMenuBox">
+	<ul id="bottomMenuItem">
+		<li><a href="#">회사소개</a></li>
+		<li><a href="#">이용약관</a></li>
+		<li><a href="#">개인정보 처리방침</a></li>
+		<li><a href="#">전자금융거래약관</a></li>
+		<li><a href="#">보안센터</a></li>
+		<li><a href="#">채용정보</a></li>
+	</ul>
+</div>
+<div id="companyInfo"><img src="image/footer.png"></div>
+<div id="moveToTopBox"><img src="image/moveToTop.png" id="moveToTop"></div>
+
+
+
+
+#footerBox div{
+	background-color:#777777;
+	border:solid 1px #999999;
+	margin-top:10px;
+	padding:20px;
+	margin:0;
+}
+
+
+
+/*********** BOTTOM MENU *************/
+
+#bottomMenuBox {
+	height:30px;
+	line-height:30px;
+}
+
+
+#bottomMenuBox li {
+	display:inline-block;
+	text-align:center;
+	padding:5px;
+}
+
+
+#bottomMenuBox li a {
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+/************* 메인 메뉴 고정 **********/
+
+/* 윈도우 스크롤 시 메인 메뉴 고정 */
+/* 클래스 선택자 css 설정해 놓고 js 파일에서 addClass()로 사용 */
+.mainMenuFixed {
+	position:fixed;
+	top:0px;
+}
+
+/* 메인 메뉴 아래에 그림자 표시 */
+.mainMenuShadow {
+	box-shadow:0 3px 5px 0px gray;
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+#moveToTop:hover { opacity:0.7; cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

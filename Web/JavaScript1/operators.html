@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자</title>
+    <script>
+        // 1. 증감 연산자 : ++, --
+        let count = 0;
+        // 혼자 사용ㅇ할 경우 앞/뒤 위치 상관없음
+        // count++;
+        ++count;
+        console.log(count);
+
+        // 위치 주의
+        let x = 10;
+
+        // 변수 뒤에 위치 : 변수값 먼저 사용한 후 증가
+        // let y = x++; // 먼저 x(10)을 y에 저장한 후, x값 1증가
+
+        // 변수 앞에 위치 : 먼저 x값 1증가한 후, y에 저장
+        let y = ++x;
+
+        console.log(y);
+        console.log(x);
+
+        // 2. 논리 부정 연산자 : !
+
+        let a = true;
+        let b = !a;
+
+        console.log(b);
+
+        // 3. 관계 연산 (비교 연산자)
+        let n1 = 10;
+        let n2 = 20;
+
+        console.log(n1 > n2); // false
+        console.log(n1 != n2); // true
+        console.log(n1 == n2); // false
+
+        // 4. 논리 연산자 : &&, ||
+        let num = 17;  // 9 
+        console.log(num % 3 == 0 || num % 4 == 0);
+        // 3 또는 4의 배수이면 true
+
+        num = 15; // 변수이므로 값 변경 가능
+        console.log(num > n1 && num > n2);  // false    
+        
+        // 5. 3항 연산자 (조건 연산자) : ?:
+        let score = 95;
+        let result = (score > 60) ? 'PASS' : 'FAIL';
+        console.log(result);
+
+        // 3항 연산자 중첩 사용
+        score = 85;
+        let grade = (score > 90 ? 'A' : (score > 80) ? 'B' : 'C');
+        console.log(grade);
+
+        // 6. 누적 대입 연산자
+        let sum = 10;
+        let n = 20;
+
+        // sum = sum + n; 
+        sum += n; // 누적 대입 연산자
+        console.log(sum); // 30
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

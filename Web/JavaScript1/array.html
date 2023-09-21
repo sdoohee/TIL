@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+    <script>
+        let num = new Array(5);
+
+        for(let i=0;i<num.length;i++){
+            num[i] = i;
+        }
+
+        document.write("num : ");
+        for(let i=0;i<num.length;i++){
+            document.write(num[i] + " ");
+        }
+
+        let player = new Array();
+
+        for(let i=0;i<3;i++){
+            player[i] = "선수" + (i+1);
+        }
+
+        document.write("<br>player : ");
+        for(let i=0;i<player.length;i++){
+            document.write(num[i] + " ");
+        }
+
+        let fish = new Array("고등어", "갈치", "명태", "대구");
+        
+        document.write("<br>fish : ");
+        for(let i=0;i<fish.length;i++){
+            document.write(num[i] + " ");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

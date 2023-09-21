@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatAt-Ex</title>
+    <script>
+        let input = prompt("숫자 입력");    // 입력된 값은 문자
+
+        for(let i=0;i<input.length;i++){
+            if(!('0' <= input.charAt(i) && input.charAt(i) <= '9')){
+                alert("숫자 형식이 아닙니다");
+                break;
+            }
+        }
+
+        document.write(input);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

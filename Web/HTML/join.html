@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join-ex</title>
+    <style>
+        h3 {text-align: center;}
+    </style>
+</head>
+<body>
+    <h3>회원가입</h3>
+    <hr>
+    <table border="0">
+        <tr><td>성명</td><td><input type="text"></td></tr>
+        <tr><td>아이디</td><td><input type="text"><input type="button" value="ID중복체크">(영문자+특수분자: 6~10자)</td></tr>
+        <tr><td>비밀번호</td><td><input type="text">(영문자+특수분자: 6~10자)</td></tr>
+        <tr><td>비밀번호 확인</td><td><input type="text"></td></tr>
+        <tr><td>생년월일</td>
+                <td>
+                    <input type="text">년 
+                    <select name="month" id="month">
+                        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
+                    </select>월 
+                    <select name="day" id="day">
+                        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
+                    </select>일<input type="radio" checked>양력<input type="radio">음력
+                </td>
+        </tr>
+        <tr><td>전화</td>
+                <td>
+                    <select name="number" id="number">
+                        <option value="02">02</option><option value="031">031</option><option value="042">042</option>
+                    </select>-
+                    <input type="text">-
+                    <input type="text">
+                </td>
+        </tr>
+        <tr><td rowspan="3">주소</td><td colspan="3"><input type="text"><input type="button" value="우편번호 찾기"></td></tr>
+        <tr><td><input type="text"></td></tr>
+        <tr><td><input type="text">상세 주소 입력</td></tr>
+        <tr><td>성별</td><td><label><input type="radio" checked>남</label><label><input type="radio">여</label></td></tr>
+        <tr><td>직업</td><td><select name="job" id="job"><option value="프로그래머">프로그래머</option><option value="부모">parent</option><option value="의사">doctor</option></select></td></tr>
+        <tr><td>이메일</td><td><input type="text">@<select name="email"><option value="naver">naver.com</option><option value="Google">gmail.com</option><option value="daum">daum.net</option></select></td></tr>
+        <tr><td>이메일 수신 여부</td><td><input type="radio" checked>예<input type="radio">아니오</td></tr>
+        <tr><td>관심분야</td><td><input type="checkbox" checked>프론트엔드 <input type="checkbox">백엔드 <input type="checkbox">풀스택 <input type="checkbox">자바 프로그래밍</td></tr>
+        <tr><td colspan="2" align="center"><input type="submit" value="회원가입"><input type="reset" value="취 소"></td></tr>
+</body>
+</html>

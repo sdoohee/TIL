@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>breakEx</title>
+    <script>
+        // 가까운 for 문만 종료시키는 경우
+        for(let i=1;i<=5;i++){
+            for(let j=1;j<=3;j++){
+                document.write(i + " : " + j + "<br>");
+                if(j==2){
+                    break;
+                }
+            }
+        }
+
+        document.write("<hr>");
+
+        // 바깥 for 문도 종료시키는 경우
+        // 이름(라벨) 붙임
+        Outter:for(let i=1;i<=5;i++){
+            for(let j=1;j<=3;j++){
+                document.write(i + " : " + j + "<br>");
+                if(j==2){
+                    break Outter;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

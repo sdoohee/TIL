@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEx3</title>
+    <script>
+        let sum = 0;
+        document.write("<table border='1'>");
+            document.write("<tr>");
+            document.write("<th>" + 'i' + "</th>")
+            document.write("<th>" + 'sum' + "</th>")
+            document.write("</tr>")
+
+        for(let i=1;i<=10;i++){
+            document.write("<tr>");
+            document.write("<td><li type='none'>" + i + "</li></td>")
+
+            sum += i;
+
+            document.write("<td><li type='none'>" + sum + "</li></td>")
+            document.write("</tr>")
+        }
+
+        document.write("</table>");
+    </script>
+    <style>
+        th{
+            background-color: yellow;
+        }
+        td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

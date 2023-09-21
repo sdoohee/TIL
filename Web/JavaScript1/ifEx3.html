@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ifEx3</title>
+</head>
+<body>
+    <script>
+        let id = 'abcd';
+        let psw = '1234';
+
+        let a = prompt("아이디 입력");
+        let b = prompt("비밀번호 입력");
+
+        if(a==id && b==psw){
+            alert(id + "님 반갑습니다");
+
+            let c = prompt("대한민국의 수도는?");
+
+            if(answer == "서울"){
+                document.write("정답입니다.");
+            }else{
+                document.write("틀렸습니다. 대한민국의 수도는 서울입니다.");
+            }
+
+        }else{
+            alert("아이디 또는 비밀번호가 일치하지 않습니다");
+            document.write("종료합니다");
+        }        
+    </script>
+</body>
+</html>

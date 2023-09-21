@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수의 반환값 예제</title>
+    <script>
+  
+        function input(){
+            let num1 = Number(prompt("국어 점수 입력"));
+            let num2 = Number(prompt("영어 점수 입력"));
+            let num3 = Number(prompt("수학 점수 입력"));
+
+            alert( "평균 : " + (num1 + num2 + num3) / 3);
+        }
+
+        function answer(){
+            let answer = confirm("성적을 입력하시겠습니까?");
+            if(answer){
+                input();
+            }else{
+                alert("종료합니다");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="answer()">성적 입력</button>
+</body>
+</html>

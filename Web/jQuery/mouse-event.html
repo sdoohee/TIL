@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // btn 버튼 클릭했을 떄
+            $('#btn').on('click', function(){
+                alert("버튼 클릭했습니다");
+            });
+
+            // 마우스 올랬을 때 뗐을 때 이벤트 처리
+            $('#btn')
+                .on('mouseover', function(){
+                    $(this).css('background', 'yellow');
+                })
+                .on('mouseout', function(){
+                    $(this).css('background', 'green');
+                });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn">클릭하세요</button>
+</body>
+</html>

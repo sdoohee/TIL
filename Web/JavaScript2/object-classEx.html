@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 정의 객체 : class 사용-Ex</title>
+    <script>
+        class Rectangle {
+            constructor(width, height) {
+                this.width = width;
+                this.height = height;
+            }
+
+            get width() {
+                return this._width;
+            }
+            get height() {
+                return this._height;
+            }
+
+            set width(width) {
+                this._width = width;
+            }
+            set height(height) {
+                this._height = height;
+            }
+
+            getArea() {
+                return this.width * this.height;
+            }
+        };
+
+        let rect = new Rectangle(30, 10);
+
+        console.log("가로길이 : " + rect.width + ", 세로길이 : " + rect.height);
+        console.log("사각형의 넓이 : " + rect.getArea());
+
+        rect.width = 20; rect.height = 30;
+        console.log("사각형의 넓이 : " + rect.getArea());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

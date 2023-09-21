@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function-paramEx1</title>
+    <script>
+        function input(){
+            let row = parseInt(prompt("테이블의 행 수 입력"));
+            let col = parseInt(prompt("테이블의 열 수 입력"));
+            
+            makeTable(row, col);
+        }
+
+        function makeTable(row, col){
+            document.write("<table border='1'>");
+
+            for(let i=0;i<row;i++){
+                document.write("<tr>")
+                for(let j=0;j<col;j++){
+                    document.write("<td>★</td>")
+                }
+                document.write("</tr>");
+            }
+            document.write("</table>")
+        }
+
+        input();
+    </script>
+</head>
+<body>
+    <table>
+        <tr><td></td></tr>
+    </table>
+</body>
+</html>
