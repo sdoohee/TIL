@@ -1,4 +1,3 @@
-
 -- 스키마 (데이터베이스) 생성
 CREATE SCHEMA sqldb1 DEFAULT CHARACTER SET utf8;
 CREATE SCHEMA sqldb2 DEFAULT CHARACTER SET UTF8MB4;
@@ -198,4 +197,6 @@ CREATE TABLE scores(
     CONSTRAINT FK_score_student FOREIGN KEY (stdNo) REFERENCES student(stdNo),
     CONSTRAINT FK_score_course FOREIGN KEY (courseId) REFERENCES course(courseId)
 );
+
+
 
