@@ -12,13 +12,13 @@ class Main:
         if num == '1':
             self.c.select()
         elif num == '2':
-            self.c.select()
+            self.c.insert()
         elif num == '3':
-            self.c.select()
+            self.c.update()
         elif num == '4':
-            self.c.select()
+            self.c.delete()
         elif num == '5':
-            self.c.select()
+            self.c.search()
         elif num == '6':
             print("종료합니다")
             break
