@@ -1,69 +1,53 @@
-# Controller 클래스 
-# 메뉴에서 선택한 항목에 따라 메소드 수행 
-from BookDAO import BookDAO
-from BookVO import Book
+from ProductDAO import ProductDAO
+from ProductVO import *
 
 class Controller:
     def __init__(self):
-        self.dao = BookDAO()
+        self.d = ProductDAO()
 
     def select(self):
-        # 도서조회 
-        # DAO 클래스의 select() 호출(DAO : 도서정보출력)
-        print("\n컨트롤러의 select") 
-        self.dao.select()
-
+        self.d.select()
+    
     def insert(self):
-         # 도서등록 
-         # 데이터 입력 
-         # DAO 클래스의 insert() 호출하면서 데이터 전달(DAO : DB에 저장)
-        print("컨트롤러의 insert") 
+        pNo = input("상품번호 입력 : ")
+        pName = input("상품명 입력 : ")
+        pPrice = input("가격 입력 : ")
+        pMaker = input("상표 입력 : ")
+        pColor = input("상품색 입력 : ")
+        cNo = input("카테고리번호 입력 : ")
+        product = Product(pNo, pName, pPrice, pMaker, pColor, cNo)
 
-        bNo = input("도서 번호: ")
-        bName = input("도서명: ")
-        bAuthor = input("저자: ")
-        bPrice = input("가격: ")
-        bDate = input("날짜(1990-01-01): ")
-        bStock = input("재고: ")
-        pNo = input("출판사번호: ")
-
-        # 입력한 값으로 Book 객체 초기화
-        book = Book(bNo, bName, bAuthor, bPrice, bDate, bStock, pNo)
-        self.dao.insert(book) # Book 객체 전달
-
-
+        self.d.insert(product)
+    
     def update(self):
-        # 도서수정
-        # 수정할 데이터 입력 
-        # DAO 클래스의 update() 호출하면서 데이터 전달(DAO : 수정된 데이터 DB 저장)
-        print("컨트롤러의 update") 
-        print("수정할 도서정보 입력 ") 
+        pNo = input("수정할 상품번호 입력 : ")
+        pName = input("상품명 입력 : ")
+        pPrice = input("가격 입력 : ")
+        pMaker = input("상표 입력 : ")
+        pColor = input("상품색 입력 : ")
+        cNo = input("카테고리번호 입력 : ")
         
-        bNo = input("도서 번호: ")
-        bName = input("도서명: ")
-        bAuthor = input("저자: ")
-        bPrice = input("가격: ")
-        bDate = input("날짜(1990-01-01): ")
-        bStock = input("재고: ")
-        pNo = input("출판사번호: ")
+        product = Product(pNo, pName, pPrice, pMaker, pColor, cNo)
 
-        book = Book(bNo, bName, bAuthor, bPrice, bDate, bStock, pNo)        
-        self.dao.update(book)
-
+        self.d.update(product)
 
     def delete(self):
-         # 도서삭제
-        # 삭제할 도서번호 입력 
-        # DAO 클래스의 delete() 호출하면서 도서번호 전달(DAO : DB에서 도서번호 해당되는 데이터 삭제)
-        print("컨트롤러의 delete")
-        bNo = input("삭제할 도서 번호: ")
-        self.dao.delete(bNo)
+        pNo = input("삭제할 상품번호 입력 : ")
 
+        self.d.delete(pNo)
+    
     def search(self):
-        # 도서 검색하고 결과 출력
-        # 검색할 도서명 입력 
-        # DAO 클래스의 search() 호출하면서 도서명(검색어) 전달(DAO : DB에서 도서명 해당되는 데이터 검색)
-        print("컨트롤러의 search")
-        bName = input("검색할 도서명: ")
-        self.dao.search(bName)
+        while True:
+            sel = input("검색 종류 키워드 (상품명, 제조회사) : ")
+            if sel == "상품명":
+                pName = input("검색할 상품명 입력 : ")
+                values = ('prdName', pName)
+                break
+            elif sel == "제조회사":
+                pMaker = input("검색할 제조회사 입력 : ")
+                values = ('prdMaker', pMaker)
+                break
+            else:
+                print("잘못 입력하셨습니다.")
 
+        self.d.search(values)
