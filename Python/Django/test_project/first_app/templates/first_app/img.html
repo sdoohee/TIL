@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>이미지 출력</h2>
+
+    <img src="{% static '/images/picture.PNG' %}"><br>
+
+    <!-- 여러 행 출력 : 반복문 사용 -->
+    <br><br>
+    <!-- 이름 : {{ member.name}} <br>
+    나이 : {{ member.age }} -->
+
+    <!-- 여러 행 출력 : 반복문 사용 -->
+    {% for member in members %}        
+        이름 : {{ member.name}}, 나이 : {{member.age}} <br>
+    {% endfor %}
+</body>
+</html>
