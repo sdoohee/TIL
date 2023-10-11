@@ -7,4 +7,4 @@
 
 ### Git
 
-- [Basic Command](주소)
+- [Basic Command](https://github.com/sdoohee/TIL/tree/main/Git)
