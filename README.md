@@ -15,7 +15,7 @@
 ## 📜 목차
 
 ### 📘 Git
-- [🔗 Basic Command](https://github.com/sdoohee/TIL/tree/main/Git) - Git의 기본 명령어에 대해 알아봅시다!
+- [🔗 Git Main](https://github.com/sdoohee/TIL/tree/main/Git) - Git의 기본 개념부터 명령어 대해 알아봅시다!
 
 ### 🐍 Python
 - [🔗 Python Main](https://github.com/sdoohee/TIL/tree/main/Python) - Python의 핵심 내용을 모아봤어요!
