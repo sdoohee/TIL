@@ -13,7 +13,7 @@
 ## 🙋‍♀️ 소개
 - 🎓 중국어과와 컴퓨터공학을 전공하고 있습니다.
 - 🌐 [티스토리](https://rico-t.tistory.com/)에서 제 개인 웹사이트를 방문해보세요!
-- ✉️ 질문이나 연락은 [sdoohee0808@naver.com](mailto:sdoohee0808@naver.com)로 해주세요!
+- 💌 질문이나 연락은 [sdoohee0808@naver.com](mailto:sdoohee0808@naver.com)로 해주세요!
   
   
 <br>
