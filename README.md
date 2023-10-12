@@ -27,18 +27,9 @@
 - [🔗 Web Main](https://github.com/sdoohee/TIL/tree/main/Web) - 웹의 기본 개념과 원리!
 - [🔗 CSS](https://github.com/sdoohee/TIL/tree/main/Web/CSS) - 스타일링의 세계! CSS 기초부터 심화까지!
 - [🔗 HTML](https://github.com/sdoohee/TIL/tree/main/Web/HTML) - 웹 페이지의 구조를 만들어봅시다!
-- [🔗 JavaScript1](https://github.com/sdoohee/TIL/tree/main/Web/JavaScript1) - JS로 웹 페이지를 동적으로!
-  - array-forEach / forin 
-  - confirm / internal
-  - dataType / external / internal / variable
-  - for / if / swtich / while / break
-  - inline  / let / operators / pormpt /  
-- [🔗 JavaScript2](https://github.com/sdoohee/TIL/tree/main/Web/JavaScript2) - JS의 다양한 특성을 깊게 탐구해봅시다!
-  - dom-createElement / getElement / location / querySelector
-  - function
-  - object
-  - window
-- [🔗 Project Examples](https://github.com/sdoohee/TIL/tree/main/Web/ProjectEx) - 웹 프로젝트 예제들을 모아봤어요!
+- [🔗 JavaScript1](https://github.com/sdoohee/TIL/tree/main/Web/JavaScript1) - JS로 웹 페이지를 동적으로! (array/for/if/while/let...)
+- [🔗 JavaScript2](https://github.com/sdoohee/TIL/tree/main/Web/JavaScript2) - JS의 다양한 특성을 깊게 탐구해봅시다! (dom/function/object/window...)
+- [🔗 Project Examples](https://github.com/sdoohee/TIL/tree/main/Web/ProjectEx) - 웹 프로젝트 예제를 작성해봤어요!
 - [🔗 Trouble Projects](https://github.com/sdoohee/TIL/tree/main/Web/TrableProject) - 웹 프로젝트 중 겪었던 문제와 해결법!
 - [🔗 jQuery](https://github.com/sdoohee/TIL/tree/main/Web/jQuery) - jQuery로 웹 개발을 더욱 쉽게!
 
