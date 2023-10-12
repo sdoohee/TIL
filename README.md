@@ -1,21 +1,28 @@
-# 🌈 Hello! Welcome to TIL 🌟
+# 🌼 송지현의 TIL (Today I Learned) 🌼
 
-🎈 안녕하세요! 여기는 TIL (Today I Learned) 제가 매일 배운 것을 기록하는 공간입니다.  
-소소한 것부터 큰 것까지, 하루의 배운 점을 아래에서 확인해보세요! 😊
+👩‍💻 안녕하세요, **송지현**입니다!  
+📖 여기는 제가 매일 배운 것을 아카이브하는 공간입니다.   
+🌟 작은 정보부터 깊은 지식까지, 제가 공부한 모든 것을 공유하려 합니다.  
+
+🌱 _"하루하루, 조금씩 성장하는 AI 벡앤드 개발자가 되기 위한 여정을 함께해요!"_
+
   
-🌱 _"하루하루 조금씩 성장해가는 개발자가 되고 싶어요!"_
+<br>
 
-## 🙋‍♀️ About Me
-저는 송지현이라고 해요. AI 벡앤드 개발자 입니다. 
-- 🏫 중국어과와 컴퓨터공학과를 공부하고 있어요.
-- 🌐 제 개인 웹사이트는 [티스토리](https://rico-t.tistory.com/)에서 확인해보실 수 있어요!
-- 💌 연락은 이메일로 주세요: [sdoohee0808@naver.com]
+
+## 🙋‍♀️ 소개
+- 🎓 중국어과와 컴퓨터공학을 전공하고 있습니다.
+- 🌐 [티스토리](https://rico-t.tistory.com/)에서 제 개인 웹사이트를 방문해보세요!
+- ✉️ 질문이나 연락은 [sdoohee0808@naver.com](mailto:sdoohee0808@naver.com)로 해주세요!
+  
+  
+<br>
 
 
 ## 📜 목차
 
 ### 📘 Git
-- [🔗 Git Main](https://github.com/sdoohee/TIL/tree/main/Git) - Git의 기본 개념부터 명령어 대해 알아봅시다!
+- [🔗 Git Main](https://github.com/sdoohee/TIL/tree/main/Git) - Git의 기본부터 시작!
 
 ### 🐍 Python
 - [🔗 Python Main](https://github.com/sdoohee/TIL/tree/main/Python) - Python의 핵심 내용을 모아봤어요!
@@ -34,9 +41,10 @@
 - [🔗 jQuery](https://github.com/sdoohee/TIL/tree/main/Web/jQuery) - jQuery로 웹 개발을 더욱 쉽게!
 
   
+<br>  
 <br>
 
 
-🌸 _매일 새로운 것을 배워나가며 성장하는 개발자가 되겠습니다!_  
-🎉 _감사합니다! 이 페이지가 도움이 되셨다면 ⭐️(스타)를 눌러주세요 또는 팔로우(친구)도 좋아요!_
-
+🌺 _매일매일 새로운 것을 배우며 성장하는 것이 즐거워요!_   
+🌟 이 공간이 여러분에게 도움이 되었다면 ⭐️ 스타를 눌러주세요!  
+🤝 함께 배우고 성장하는 것이 더욱 기쁩니다. 팔로우나 친구 추가도 환영해요!
