@@ -33,6 +33,10 @@
 - [🔗 Trouble Projects](https://github.com/sdoohee/TIL/tree/main/Web/TrableProject) - 웹 프로젝트 중 겪었던 문제와 해결법!
 - [🔗 jQuery](https://github.com/sdoohee/TIL/tree/main/Web/jQuery) - jQuery로 웹 개발을 더욱 쉽게!
 
+  
+<br>
+
+
 🌸 _매일 새로운 것을 배워나가며 성장하는 개발자가 되겠습니다!_  
 🎉 _감사합니다! 이 페이지가 도움이 되셨다면 ⭐️(스타)를 눌러주세요 또는 팔로우(친구)도 좋아요!_
 
